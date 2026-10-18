@@ -13,4 +13,6 @@
 | 8 Evaluation | PASS | History/validation/test protocol, frozen config, reproducible (2 identical runs), 0 leakage issues. v1 archived. |
 | 9 Frontend/API | PASS | React/TS/Cytoscape UI on the real API; build passes; manually verified in Chrome. |
 | 10 E2E/adversarial | PASS | `e2e_check.py` phases 1/2/down pass across restarts; adversarial suite passes. Found and worked around a FalkorDB AOF crash (RDB persistence). |
+| 9b Frontend refactor | PASS | Graph-first workbench: incident list + 4 tabs, rebuilt Cytoscape graph (icons, data-derived layout, controls, drawer), Memory & Timeline and Evaluation pages. Build + manual Chrome verification; see TEST_REPORT. |
+| 9c Visual redesign + guide | PASS | Design system based on the Refero/Runey reference, rail navigation, stat tiles + Investigation tile, restyled graph, in-app guide (A–H) with real screenshots, printable one-pager (1 A4 page verified). See TEST_REPORT. |
 | 11 Docs | PASS | README, docs/*.md, status files. Video not recorded; no public deployment; LICENSE to be chosen by the owner. |

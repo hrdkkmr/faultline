@@ -6,6 +6,7 @@ export default defineConfig(({ mode }) => {
   const target = env.VITE_API_BASE || "http://localhost:8000";
   return {
     plugins: [react()],
+    build: { rollupOptions: { output: { manualChunks: { cytoscape: ["cytoscape"], react: ["react", "react-dom"] } } } },
     server: { port: 5173, proxy: { "/api": target, "/health": target } },
     preview: { port: 4173, proxy: { "/api": target, "/health": target } },
   };

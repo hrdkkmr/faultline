@@ -35,4 +35,11 @@
 - No code LICENSE file was added. The owner must choose one before publishing. Data/reference licenses are in
   README.
 - Frontend has no automated UI tests; it was verified manually in Chrome (investigate, evidence, approve/simulate,
-  memory reuse, evaluation and memory views, no console errors).
+  memory reuse, evaluation and memory views, graph controls, node drawer, 390 px and 1000 px widths, no console errors).
+- Graph view: no minimap (12 services fit on screen; Cytoscape has no built-in minimap and a plugin was not worth a
+  dependency). Node health is only "anomalous" or neutral; services without telemetry show as *Unknown* in the drawer,
+  never as healthy. On phone widths the graph is small but zoomable.
+- Guide screenshots are static captures (2026-10-18). They must be recaptured when the UI changes (docs/guide.md);
+  nothing checks them automatically.
+- Poppins is self-hosted; JetBrains Mono is not bundled, so IDs fall back to Cascadia Mono/Consolas.
+- Severity is not shown anywhere: neither RCAEval nor the scenarios provide it, and the UI does not invent one.

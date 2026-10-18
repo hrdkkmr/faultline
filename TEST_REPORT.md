@@ -15,6 +15,44 @@ Commands as run, with observed results (2026-10-16, Windows 11, Python 3.13.7, F
 | Graph removal | `docker compose stop falkordb`; `e2e_check.py --phase down` | 3/3 PASS (health 503, investigate 503 `graph_unavailable`, list 503); recovered to 200 after restart |
 | Manual UI | Chrome on http://localhost:5173 | investigate, evidence panel, 403 without approval, simulate → resolved + memory, memory reuse on SYN-redis-mem-2, evaluation/memory views, no console errors |
 
+## Frontend refactor (2026-10-18)
+
+| Check | Command / method | Result |
+|---|---|---|
+| Typecheck | `cd frontend && npx tsc -b` | clean (strict, noUnused*) |
+| Production build | `cd frontend && npm run build` | OK; vendor chunks split (cytoscape 380 kB, react 142 kB, app 150 kB); no size warning |
+| Lint | — | no lint script/ESLint config exists in the project; none run |
+| Manual, Chrome @ 1510 px | dev server against the live backend + FalkorDB | 3 pages navigate; 4 incident tabs switch (URL updates); graph renders from `/api/incidents/{id}/graph`; zoom in/out, fit, reset, find-service search, node drawer (observations, deps, blast radius via `/blast-radius`), impact-path toggle; Investigate on `INC-88785794b0` → candidate recommendationservice; approve + Simulate `restart_service` → resolved, memory recorded, incident status → Resolved; Memory and Timeline sub-tabs; Evaluation splits; unknown incident → "Not found" notice with details; no console errors |
+| Responsive | same app in 390 px and 1000 px iframes | phone: list ↔ workspace toggle, panel starts closed; laptop: impact panel overlays as drawer |
+| Copy scan | `grep -rniE "hack\|judge\|track\|submission\|competition" frontend/src` | no user-facing matches (only CSS class names containing "track") |
+
+Defects found during this verification and fixed: long service names overflowed fixed-width nodes (labels shortened,
+width from label); collapsed incident list left the workspace in a 0-px grid column on phones; a stale Vite CSS cache
+served an empty stylesheet after rapid edits (dev-server restart; production build unaffected).
+
+Not re-run for this change: backend pytest (no backend files changed).
+
+## Visual redesign + guide (2026-10-18)
+
+| Check | Command / method | Result |
+|---|---|---|
+| Typecheck / build | `npx tsc -b`; `npm run build` | clean; build OK |
+| Navigation | Chrome, rail + top bar | Incidents, Memory & Timeline, Evaluation, Help all render; active state correct |
+| Incident tabs | click each tab | all four render real data |
+| Investigate | `INC-3845c959bd`, Graph + Memory | button disabled + "Running" during the call; new run stored (2 runs listed); candidate tile updated |
+| Graph | select redis, search, controls | drawer opens; selection ring; reset/fit/zoom work |
+| Guide links | script over every `a[href]` in the guide | 22/22 resolve (9 guide anchors, 6 app views, 6 screenshot files HTTP 200) |
+| First-visit hint | cleared localStorage key | hint shown; hidden after opening the guide |
+| Printable flyer | headless Chrome `--print-to-pdf` | 1 A4 page, opened in Chrome's PDF viewer; white margins after a print-CSS fix |
+| Responsive | 390 px and 640 px iframes | no page-level horizontal overflow; rail becomes a bottom bar |
+| Console | Chrome console across pages | no errors |
+| Copy scan | grep for competition/placeholder terms in `frontend/src` | no matches |
+
+Defects found and fixed during this pass: Poppins is wider than Inter, so node labels overflowed (node width
+recomputed); guide markers covered their targets (offset, and flipped near the edges); narrow-screen media queries
+applied when printing and pushed the flyer to 2 pages (scoped to `screen`); `@page` margins printed black
+(margin moved into the flyer's padding).
+
 ## Test files
 
 | File | Covers |
