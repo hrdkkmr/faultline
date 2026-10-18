@@ -1,0 +1,69 @@
+{
+  "incident_id": "SYN-redis-mem-1",
+  "detected_at": 1788000000,
+  "title": "[synthetic] Cart and storefront latency rising",
+  "description": "Controlled scenario: memory pressure in the cart datastore propagates to callers.",
+  "observations": [
+    {
+      "kind": "metric",
+      "service": "redis",
+      "signal": "mem",
+      "score": 420,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "redis",
+      "signal": "latency-90",
+      "score": 40,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "cartservice",
+      "signal": "latency-90",
+      "score": 180,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "latency-90",
+      "score": 60,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "checkoutservice",
+      "signal": "latency-90",
+      "score": 25,
+      "direction": "up"
+    },
+    {
+      "kind": "log",
+      "service": "cartservice",
+      "signal": "log_errors",
+      "score": 12,
+      "direction": "up",
+      "samples": [
+        "Can't access cart storage. StackExchange.Redis.RedisTimeoutException"
+      ]
+    },
+    {
+      "kind": "metric",
+      "service": "cartservice",
+      "signal": "cpu",
+      "score": 1.1,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "cpu",
+      "score": 0.8,
+      "direction": "up"
+    }
+  ],
+  "source": "synthetic",
+  "dataset": "synthetic"
+}

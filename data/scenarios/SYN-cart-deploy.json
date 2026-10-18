@@ -1,0 +1,74 @@
+{
+  "incident_id": "SYN-cart-deploy",
+  "detected_at": 1788432000,
+  "title": "[synthetic] Cart and storefront latency rising",
+  "description": "Controlled scenario: looks like the redis incidents from the storefront, different cause.",
+  "observations": [
+    {
+      "kind": "metric",
+      "service": "cartservice",
+      "signal": "latency-90",
+      "score": 170,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "latency-90",
+      "score": 55,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "checkoutservice",
+      "signal": "latency-90",
+      "score": 22,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "cartservice",
+      "signal": "error",
+      "score": 40,
+      "direction": "up"
+    },
+    {
+      "kind": "log",
+      "service": "cartservice",
+      "signal": "log_errors",
+      "score": 30,
+      "direction": "up",
+      "samples": [
+        "NullReferenceException in CartStore.GetCartAsync (v2.4.0)"
+      ]
+    },
+    {
+      "kind": "metric",
+      "service": "redis",
+      "signal": "mem",
+      "score": 0.6,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "redis",
+      "signal": "latency-90",
+      "score": 0.4,
+      "direction": "up"
+    }
+  ],
+  "deployments": [
+    {
+      "id": "DEP-cart-2.4.0",
+      "service": "cartservice",
+      "version": "2.4.0",
+      "previous_version": "2.3.7",
+      "at": 1788431400,
+      "change_type": "release",
+      "description": "[synthetic] cart release 2.4.0",
+      "source": "synthetic"
+    }
+  ],
+  "source": "synthetic",
+  "dataset": "synthetic"
+}

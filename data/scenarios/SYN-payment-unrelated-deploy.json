@@ -1,0 +1,64 @@
+{
+  "incident_id": "SYN-payment-unrelated-deploy",
+  "detected_at": 1788604800,
+  "title": "[synthetic] Checkout latency rising",
+  "description": "Controlled scenario: a recent cart deployment coincides with a checkout slowdown.",
+  "observations": [
+    {
+      "kind": "metric",
+      "service": "paymentservice",
+      "signal": "cpu",
+      "score": 260,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "paymentservice",
+      "signal": "latency-90",
+      "score": 120,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "checkoutservice",
+      "signal": "latency-90",
+      "score": 90,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "latency-90",
+      "score": 30,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "cartservice",
+      "signal": "latency-90",
+      "score": 0.7,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "cartservice",
+      "signal": "cpu",
+      "score": 0.5,
+      "direction": "up"
+    }
+  ],
+  "deployments": [
+    {
+      "id": "DEP-cart-2.4.1",
+      "service": "cartservice",
+      "version": "2.4.1",
+      "previous_version": "2.4.0",
+      "at": 1788603900,
+      "change_type": "release",
+      "description": "[synthetic] cart release 2.4.1",
+      "source": "synthetic"
+    }
+  ],
+  "source": "synthetic",
+  "dataset": "synthetic"
+}

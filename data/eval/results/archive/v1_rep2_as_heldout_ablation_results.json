@@ -1,0 +1,5178 @@
+{
+  "generated_at": "2026-10-16T13:50:00+00:00",
+  "graph": "faultline_eval",
+  "protocol": "see app/evaluation/runner.py docstring and docs/evaluation.md",
+  "dataset": {
+    "rcaeval_history": 30,
+    "rcaeval_heldout": 30,
+    "synthetic": 7,
+    "source": {
+      "hf_repo": "phamquiluan/RCAEval",
+      "revision": "afeacb11bcc94dadfd1c8f483ee4377b2b8b614e",
+      "dataset": "RE2-OB",
+      "license": "MIT (RCAEval datasets)"
+    }
+  },
+  "graph_load": {
+    "rcaeval_incidents": 60,
+    "synthetic_incidents": 7
+  },
+  "heldout_summary": {
+    "A_incident_only": {
+      "n": 30,
+      "top1": 0.9,
+      "top3": 1.0,
+      "avg5": 0.967,
+      "abstained": 0,
+      "fault_class_acc": 0.733,
+      "actions_taken": 30,
+      "mitigation_success_rate": 0.667,
+      "inappropriate_action_rate": 0.333,
+      "worsened": 2,
+      "evidence_validity": 1.0,
+      "blast_precision": 0.424,
+      "blast_recall": 0.453,
+      "mean_applicable_memories": 0,
+      "latency_ms_median": 35.0,
+      "latency_ms_p95": 44.9
+    },
+    "B_graph": {
+      "n": 30,
+      "top1": 0.9,
+      "top3": 1.0,
+      "avg5": 0.98,
+      "abstained": 0,
+      "fault_class_acc": 0.767,
+      "actions_taken": 30,
+      "mitigation_success_rate": 0.667,
+      "inappropriate_action_rate": 0.333,
+      "worsened": 3,
+      "evidence_validity": 1.0,
+      "blast_precision": 1.0,
+      "blast_recall": 0.928,
+      "mean_applicable_memories": 0,
+      "latency_ms_median": 89.2,
+      "latency_ms_p95": 121.8
+    },
+    "C_graph_memory": {
+      "n": 30,
+      "top1": 0.9,
+      "top3": 1.0,
+      "avg5": 0.973,
+      "abstained": 0,
+      "fault_class_acc": 0.733,
+      "actions_taken": 30,
+      "mitigation_success_rate": 0.733,
+      "inappropriate_action_rate": 0.267,
+      "worsened": 1,
+      "evidence_validity": 1.0,
+      "blast_precision": 1.0,
+      "blast_recall": 0.961,
+      "mean_applicable_memories": 1.73,
+      "latency_ms_median": 100.9,
+      "latency_ms_p95": 135.5
+    },
+    "C_loso_control": {
+      "n": 30,
+      "top1": 0.8,
+      "top3": 0.933,
+      "avg5": 0.92,
+      "abstained": 0,
+      "fault_class_acc": 0.7,
+      "actions_taken": 29,
+      "mitigation_success_rate": 0.552,
+      "inappropriate_action_rate": 0.448,
+      "worsened": 1,
+      "evidence_validity": 1.0,
+      "blast_precision": 0.989,
+      "blast_recall": 0.928,
+      "mean_applicable_memories": 0.33,
+      "latency_ms_median": 101.4,
+      "latency_ms_p95": 150.7
+    }
+  },
+  "history_summary_development_set": {
+    "A_incident_only": {
+      "n": 30,
+      "top1": 0.9,
+      "top3": 1.0,
+      "avg5": 0.973,
+      "abstained": 0,
+      "fault_class_acc": 0.633,
+      "actions_taken": 0,
+      "mitigation_success_rate": null,
+      "inappropriate_action_rate": null,
+      "worsened": 0,
+      "evidence_validity": 1.0,
+      "blast_precision": 0.377,
+      "blast_recall": 0.458,
+      "mean_applicable_memories": 0,
+      "latency_ms_median": 30.5,
+      "latency_ms_p95": 65.1
+    },
+    "B_graph": {
+      "n": 30,
+      "top1": 1.0,
+      "top3": 1.0,
+      "avg5": 1.0,
+      "abstained": 0,
+      "fault_class_acc": 0.633,
+      "actions_taken": 0,
+      "mitigation_success_rate": null,
+      "inappropriate_action_rate": null,
+      "worsened": 0,
+      "evidence_validity": 1.0,
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "mean_applicable_memories": 0,
+      "latency_ms_median": 100.7,
+      "latency_ms_p95": 150.8
+    }
+  },
+  "synthetic_summary": {
+    "A_incident_only": {
+      "n": 7,
+      "top1": 1.0,
+      "top3": 1.0,
+      "avg5": 1.0,
+      "abstained": 0,
+      "fault_class_acc": 0.857,
+      "actions_taken": 7,
+      "mitigation_success_rate": 0.857,
+      "inappropriate_action_rate": 0.143,
+      "worsened": 0,
+      "evidence_validity": 1.0,
+      "blast_precision": 1.0,
+      "blast_recall": 0.655,
+      "mean_applicable_memories": 0,
+      "latency_ms_median": 31.0,
+      "latency_ms_p95": 41.6
+    },
+    "B_graph": {
+      "n": 7,
+      "top1": 1.0,
+      "top3": 1.0,
+      "avg5": 1.0,
+      "abstained": 0,
+      "fault_class_acc": 1.0,
+      "actions_taken": 7,
+      "mitigation_success_rate": 1.0,
+      "inappropriate_action_rate": 0.0,
+      "worsened": 0,
+      "evidence_validity": 1.0,
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "mean_applicable_memories": 0,
+      "latency_ms_median": 113.5,
+      "latency_ms_p95": 126.1
+    },
+    "C_graph_memory": {
+      "n": 7,
+      "top1": 1.0,
+      "top3": 1.0,
+      "avg5": 1.0,
+      "abstained": 0,
+      "fault_class_acc": 1.0,
+      "actions_taken": 7,
+      "mitigation_success_rate": 1.0,
+      "inappropriate_action_rate": 0.0,
+      "worsened": 0,
+      "evidence_validity": 1.0,
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "mean_applicable_memories": 0.14,
+      "latency_ms_median": 113.7,
+      "latency_ms_p95": 167.9
+    }
+  },
+  "history_phase": {
+    "memories_written": 40,
+    "resolved": 27,
+    "log": [
+      {
+        "incident_id": "INC-3845c959bd",
+        "predicted": "productcatalogservice",
+        "truth_root": "productcatalogservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "scale_out",
+              "target": "productcatalogservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-d3b611e79b",
+        "predicted": "productcatalogservice",
+        "truth_root": "productcatalogservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "restart_service",
+              "target": "productcatalogservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "productcatalogservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-027e503593",
+        "predicted": "recommendationservice",
+        "truth_root": "recommendationservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "scale_out",
+              "target": "recommendationservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-7531550912",
+        "predicted": "recommendationservice",
+        "truth_root": "recommendationservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "restart_service",
+              "target": "recommendationservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "recommendationservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-c91099c30d",
+        "predicted": "emailservice",
+        "truth_root": "emailservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "scale_out",
+              "target": "emailservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-29f0c35d87",
+        "predicted": "emailservice",
+        "truth_root": "emailservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "scale_out",
+              "target": "emailservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "restart_service",
+              "target": "emailservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-7eac1dc380",
+        "predicted": "checkoutservice",
+        "truth_root": "checkoutservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "scale_out",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-469c9b8712",
+        "predicted": "productcatalogservice",
+        "truth_root": "productcatalogservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "scale_out",
+              "target": "productcatalogservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "productcatalogservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-c493281765",
+        "predicted": "productcatalogservice",
+        "truth_root": "productcatalogservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "productcatalogservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-2dd32eb82e",
+        "predicted": "recommendationservice",
+        "truth_root": "recommendationservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "scale_out",
+              "target": "recommendationservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "recommendationservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-e6651459c7",
+        "predicted": "emailservice",
+        "truth_root": "emailservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "emailservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-2e1aba007c",
+        "predicted": "checkoutservice",
+        "truth_root": "checkoutservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "scale_out",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "increase_memory_limit",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-d421885127",
+        "predicted": "checkoutservice",
+        "truth_root": "checkoutservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "restart_service",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-57c35485c0",
+        "predicted": "currencyservice",
+        "truth_root": "currencyservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "restart_service",
+              "target": "currencyservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "currencyservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-18dc80da60",
+        "predicted": "currencyservice",
+        "truth_root": "currencyservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "currencyservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-819eb97aef",
+        "predicted": "productcatalogservice",
+        "truth_root": "productcatalogservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "productcatalogservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-669a4ad22a",
+        "predicted": "productcatalogservice",
+        "truth_root": "productcatalogservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "productcatalogservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-b1c8a781a7",
+        "predicted": "recommendationservice",
+        "truth_root": "recommendationservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "recommendationservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-c5da4c865c",
+        "predicted": "recommendationservice",
+        "truth_root": "recommendationservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "recommendationservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-ed9bd8a6cd",
+        "predicted": "recommendationservice",
+        "truth_root": "recommendationservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "recommendationservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-185c3f7b3f",
+        "predicted": "checkoutservice",
+        "truth_root": "checkoutservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-9c15e21d5a",
+        "predicted": "currencyservice",
+        "truth_root": "currencyservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "currencyservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-7400050ba3",
+        "predicted": "emailservice",
+        "truth_root": "emailservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "emailservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-e7d8b44157",
+        "predicted": "currencyservice",
+        "truth_root": "currencyservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "currencyservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-7710717297",
+        "predicted": "checkoutservice",
+        "truth_root": "checkoutservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-c5c78ab3da",
+        "predicted": "checkoutservice",
+        "truth_root": "checkoutservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-b9c22caef9",
+        "predicted": "currencyservice",
+        "truth_root": "currencyservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "currencyservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          },
+          {
+            "action": {
+              "type": "increase_memory_limit",
+              "target": "currencyservice",
+              "params": {}
+            },
+            "result": "not_resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-c164d228ab",
+        "predicted": "checkoutservice",
+        "truth_root": "currencyservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "checkoutservice",
+              "params": {}
+            },
+            "result": "worsened"
+          },
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "currencyservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-46aa122ede",
+        "predicted": "emailservice",
+        "truth_root": "emailservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "emailservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      },
+      {
+        "incident_id": "INC-c0de36c6c8",
+        "predicted": "emailservice",
+        "truth_root": "emailservice",
+        "attempts": [
+          {
+            "action": {
+              "type": "reschedule_pod",
+              "target": "emailservice",
+              "params": {}
+            },
+            "result": "resolved"
+          }
+        ]
+      }
+    ]
+  },
+  "leakage_issues": [],
+  "integrity_ok": true,
+  "integrity_problems": [],
+  "rows_heldout": [
+    {
+      "incident_id": "INC-040f14f038",
+      "mode": "A_incident_only",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.0,
+      "blast_recall": 0.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 23.33
+    },
+    {
+      "incident_id": "INC-040f14f038",
+      "mode": "B_graph",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 81.91
+    },
+    {
+      "incident_id": "INC-040f14f038",
+      "mode": "C_graph_memory",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 9,
+      "latency_ms": 97.32
+    },
+    {
+      "incident_id": "INC-040f14f038",
+      "mode": "C_loso_control",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 4,
+      "latency_ms": 75.73
+    },
+    {
+      "incident_id": "INC-0bc276d10f",
+      "mode": "A_incident_only",
+      "truth_root": "recommendationservice",
+      "truth_fault": "disk",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "paymentservice",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 19,
+      "evidence_valid": 19,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.333,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 35.81
+    },
+    {
+      "incident_id": "INC-0bc276d10f",
+      "mode": "B_graph",
+      "truth_root": "recommendationservice",
+      "truth_fault": "disk",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "paymentservice",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 20,
+      "evidence_valid": 20,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 86.3
+    },
+    {
+      "incident_id": "INC-0bc276d10f",
+      "mode": "C_graph_memory",
+      "truth_root": "recommendationservice",
+      "truth_fault": "disk",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "paymentservice",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 20,
+      "evidence_valid": 20,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 3,
+      "memories_rejected": 12,
+      "latency_ms": 95.63
+    },
+    {
+      "incident_id": "INC-0bc276d10f",
+      "mode": "C_loso_control",
+      "truth_root": "recommendationservice",
+      "truth_fault": "disk",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "paymentservice",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 20,
+      "evidence_valid": 20,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 18,
+      "latency_ms": 95.09
+    },
+    {
+      "incident_id": "INC-0e92f00a1e",
+      "mode": "A_incident_only",
+      "truth_root": "recommendationservice",
+      "truth_fault": "loss",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "adservice",
+        "productcatalogservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 28,
+      "evidence_valid": 28,
+      "action": {
+        "type": "restart_service",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 0.167,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 37.35
+    },
+    {
+      "incident_id": "INC-0e92f00a1e",
+      "mode": "B_graph",
+      "truth_root": "recommendationservice",
+      "truth_fault": "loss",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice",
+        "adservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 28,
+      "evidence_valid": 28,
+      "action": {
+        "type": "restart_service",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 121.78
+    },
+    {
+      "incident_id": "INC-0e92f00a1e",
+      "mode": "C_graph_memory",
+      "truth_root": "recommendationservice",
+      "truth_fault": "loss",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice",
+        "adservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 28,
+      "evidence_valid": 28,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 7,
+      "latency_ms": 103.08
+    },
+    {
+      "incident_id": "INC-0e92f00a1e",
+      "mode": "C_loso_control",
+      "truth_root": "recommendationservice",
+      "truth_fault": "loss",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice",
+        "adservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 28,
+      "evidence_valid": 28,
+      "action": {
+        "type": "restart_service",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 15,
+      "latency_ms": 145.38
+    },
+    {
+      "incident_id": "INC-19cccdb4c1",
+      "mode": "A_incident_only",
+      "truth_root": "currencyservice",
+      "truth_fault": "disk",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "frontend",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 24,
+      "evidence_valid": 24,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.667,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 38.12
+    },
+    {
+      "incident_id": "INC-19cccdb4c1",
+      "mode": "B_graph",
+      "truth_root": "currencyservice",
+      "truth_fault": "disk",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 24,
+      "evidence_valid": 24,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 84.76
+    },
+    {
+      "incident_id": "INC-19cccdb4c1",
+      "mode": "C_graph_memory",
+      "truth_root": "currencyservice",
+      "truth_fault": "disk",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 24,
+      "evidence_valid": 24,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 10,
+      "latency_ms": 101.53
+    },
+    {
+      "incident_id": "INC-19cccdb4c1",
+      "mode": "C_loso_control",
+      "truth_root": "currencyservice",
+      "truth_fault": "disk",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 24,
+      "evidence_valid": 24,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 19,
+      "latency_ms": 99.53
+    },
+    {
+      "incident_id": "INC-1a8c47d522",
+      "mode": "A_incident_only",
+      "truth_root": "emailservice",
+      "truth_fault": "disk",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.0,
+      "blast_recall": 0.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 44.9
+    },
+    {
+      "incident_id": "INC-1a8c47d522",
+      "mode": "B_graph",
+      "truth_root": "emailservice",
+      "truth_fault": "disk",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 45.37
+    },
+    {
+      "incident_id": "INC-1a8c47d522",
+      "mode": "C_graph_memory",
+      "truth_root": "emailservice",
+      "truth_fault": "disk",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 12,
+      "latency_ms": 66.02
+    },
+    {
+      "incident_id": "INC-1a8c47d522",
+      "mode": "C_loso_control",
+      "truth_root": "emailservice",
+      "truth_fault": "disk",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "disk",
+      "fault_class_ok": true,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 12,
+      "latency_ms": 59.86
+    },
+    {
+      "incident_id": "INC-383ebfd77e",
+      "mode": "A_incident_only",
+      "truth_root": "currencyservice",
+      "truth_fault": "loss",
+      "predicted": "frontend",
+      "ranked": [
+        "frontend",
+        "currencyservice",
+        "recommendationservice",
+        "checkoutservice",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 33,
+      "evidence_valid": 33,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "frontend",
+        "params": {}
+      },
+      "action_outcome": "worsened",
+      "blast_precision": 0.111,
+      "blast_recall": 0.333,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 38.82
+    },
+    {
+      "incident_id": "INC-383ebfd77e",
+      "mode": "B_graph",
+      "truth_root": "currencyservice",
+      "truth_fault": "loss",
+      "predicted": "frontend",
+      "ranked": [
+        "frontend",
+        "currencyservice",
+        "recommendationservice",
+        "checkoutservice",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 33,
+      "evidence_valid": 33,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "frontend",
+        "params": {}
+      },
+      "action_outcome": "worsened",
+      "blast_precision": 1.0,
+      "blast_recall": 0.333,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 93.14
+    },
+    {
+      "incident_id": "INC-383ebfd77e",
+      "mode": "C_graph_memory",
+      "truth_root": "currencyservice",
+      "truth_fault": "loss",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "currencyservice",
+        "checkoutservice",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.6,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 35,
+      "evidence_valid": 35,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.667,
+      "memories_applicable": 1,
+      "memories_rejected": 0,
+      "latency_ms": 154.73
+    },
+    {
+      "incident_id": "INC-383ebfd77e",
+      "mode": "C_loso_control",
+      "truth_root": "currencyservice",
+      "truth_fault": "loss",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": false,
+      "avg5": 0.4,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 35,
+      "evidence_valid": 35,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.667,
+      "memories_applicable": 1,
+      "memories_rejected": 4,
+      "latency_ms": 150.67
+    },
+    {
+      "incident_id": "INC-3a978d4183",
+      "mode": "A_incident_only",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "cpu",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 27,
+      "evidence_valid": 27,
+      "action": {
+        "type": "scale_out",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.75,
+      "blast_recall": 0.75,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 53.62
+    },
+    {
+      "incident_id": "INC-3a978d4183",
+      "mode": "B_graph",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "cpu",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 27,
+      "evidence_valid": 27,
+      "action": {
+        "type": "scale_out",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 120.19
+    },
+    {
+      "incident_id": "INC-3a978d4183",
+      "mode": "C_graph_memory",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "cpu",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 27,
+      "evidence_valid": 27,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 3,
+      "memories_rejected": 7,
+      "latency_ms": 112.8
+    },
+    {
+      "incident_id": "INC-3a978d4183",
+      "mode": "C_loso_control",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "cpu",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 27,
+      "evidence_valid": 27,
+      "action": {
+        "type": "scale_out",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 15,
+      "latency_ms": 131.84
+    },
+    {
+      "incident_id": "INC-5d70f71632",
+      "mode": "A_incident_only",
+      "truth_root": "currencyservice",
+      "truth_fault": "socket",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "frontend",
+        "cartservice",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "restart_service",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.5,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 48.2
+    },
+    {
+      "incident_id": "INC-5d70f71632",
+      "mode": "B_graph",
+      "truth_root": "currencyservice",
+      "truth_fault": "socket",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "restart_service",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 107.88
+    },
+    {
+      "incident_id": "INC-5d70f71632",
+      "mode": "C_graph_memory",
+      "truth_root": "currencyservice",
+      "truth_fault": "socket",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 10,
+      "latency_ms": 135.46
+    },
+    {
+      "incident_id": "INC-5d70f71632",
+      "mode": "C_loso_control",
+      "truth_root": "currencyservice",
+      "truth_fault": "socket",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "restart_service",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 19,
+      "latency_ms": 111.19
+    },
+    {
+      "incident_id": "INC-5eed0ae6b0",
+      "mode": "A_incident_only",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "disk",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "adservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": false,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 0.6,
+      "blast_recall": 0.75,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 40.11
+    },
+    {
+      "incident_id": "INC-5eed0ae6b0",
+      "mode": "B_graph",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "disk",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "currencyservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": false,
+      "evidence_cited": 29,
+      "evidence_valid": 29,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 100.17
+    },
+    {
+      "incident_id": "INC-5eed0ae6b0",
+      "mode": "C_graph_memory",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "disk",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "currencyservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": false,
+      "evidence_cited": 29,
+      "evidence_valid": 29,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 3,
+      "memories_rejected": 6,
+      "latency_ms": 122.01
+    },
+    {
+      "incident_id": "INC-5eed0ae6b0",
+      "mode": "C_loso_control",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "disk",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "currencyservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": false,
+      "evidence_cited": 29,
+      "evidence_valid": 29,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 14,
+      "latency_ms": 139.91
+    },
+    {
+      "incident_id": "INC-600a2ab220",
+      "mode": "A_incident_only",
+      "truth_root": "currencyservice",
+      "truth_fault": "cpu",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "frontend",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "restart_service",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 0.667,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 39.3
+    },
+    {
+      "incident_id": "INC-600a2ab220",
+      "mode": "B_graph",
+      "truth_root": "currencyservice",
+      "truth_fault": "cpu",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "cartservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "restart_service",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 85.49
+    },
+    {
+      "incident_id": "INC-600a2ab220",
+      "mode": "C_graph_memory",
+      "truth_root": "currencyservice",
+      "truth_fault": "cpu",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 10,
+      "latency_ms": 107.68
+    },
+    {
+      "incident_id": "INC-600a2ab220",
+      "mode": "C_loso_control",
+      "truth_root": "currencyservice",
+      "truth_fault": "cpu",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "restart_service",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 19,
+      "latency_ms": 111.44
+    },
+    {
+      "incident_id": "INC-6092e380f4",
+      "mode": "A_incident_only",
+      "truth_root": "recommendationservice",
+      "truth_fault": "delay",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 15,
+      "evidence_valid": 15,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.5,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 33.01
+    },
+    {
+      "incident_id": "INC-6092e380f4",
+      "mode": "B_graph",
+      "truth_root": "recommendationservice",
+      "truth_fault": "delay",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 15,
+      "evidence_valid": 15,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 110.73
+    },
+    {
+      "incident_id": "INC-6092e380f4",
+      "mode": "C_graph_memory",
+      "truth_root": "recommendationservice",
+      "truth_fault": "delay",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 15,
+      "evidence_valid": 15,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 15,
+      "latency_ms": 116.71
+    },
+    {
+      "incident_id": "INC-6092e380f4",
+      "mode": "C_loso_control",
+      "truth_root": "recommendationservice",
+      "truth_fault": "delay",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 15,
+      "evidence_valid": 15,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 20,
+      "latency_ms": 131.83
+    },
+    {
+      "incident_id": "INC-671143ac7e",
+      "mode": "A_incident_only",
+      "truth_root": "checkoutservice",
+      "truth_fault": "cpu",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "frontend",
+        "redis",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "scale_out",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.333,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 37.52
+    },
+    {
+      "incident_id": "INC-671143ac7e",
+      "mode": "B_graph",
+      "truth_root": "checkoutservice",
+      "truth_fault": "cpu",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "redis",
+        "currencyservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "scale_out",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 80.89
+    },
+    {
+      "incident_id": "INC-671143ac7e",
+      "mode": "C_graph_memory",
+      "truth_root": "checkoutservice",
+      "truth_fault": "cpu",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "redis",
+        "currencyservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 11,
+      "latency_ms": 92.91
+    },
+    {
+      "incident_id": "INC-671143ac7e",
+      "mode": "C_loso_control",
+      "truth_root": "checkoutservice",
+      "truth_fault": "cpu",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "redis",
+        "currencyservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "scale_out",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 19,
+      "latency_ms": 92.48
+    },
+    {
+      "incident_id": "INC-6730e7f42d",
+      "mode": "A_incident_only",
+      "truth_root": "emailservice",
+      "truth_fault": "delay",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 11,
+      "evidence_valid": 11,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.333,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 39.89
+    },
+    {
+      "incident_id": "INC-6730e7f42d",
+      "mode": "B_graph",
+      "truth_root": "emailservice",
+      "truth_fault": "delay",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 11,
+      "evidence_valid": 11,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 77.24
+    },
+    {
+      "incident_id": "INC-6730e7f42d",
+      "mode": "C_graph_memory",
+      "truth_root": "emailservice",
+      "truth_fault": "delay",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 11,
+      "evidence_valid": 11,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 14,
+      "latency_ms": 88.66
+    },
+    {
+      "incident_id": "INC-6730e7f42d",
+      "mode": "C_loso_control",
+      "truth_root": "emailservice",
+      "truth_fault": "delay",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 11,
+      "evidence_valid": 11,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 15,
+      "latency_ms": 90.46
+    },
+    {
+      "incident_id": "INC-6e362be36f",
+      "mode": "A_incident_only",
+      "truth_root": "emailservice",
+      "truth_fault": "mem",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": false,
+      "evidence_cited": 17,
+      "evidence_valid": 17,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 31.21
+    },
+    {
+      "incident_id": "INC-6e362be36f",
+      "mode": "B_graph",
+      "truth_root": "emailservice",
+      "truth_fault": "mem",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": false,
+      "evidence_cited": 17,
+      "evidence_valid": 17,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 88.94
+    },
+    {
+      "incident_id": "INC-6e362be36f",
+      "mode": "C_graph_memory",
+      "truth_root": "emailservice",
+      "truth_fault": "mem",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": false,
+      "evidence_cited": 17,
+      "evidence_valid": 17,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 8,
+      "latency_ms": 105.05
+    },
+    {
+      "incident_id": "INC-6e362be36f",
+      "mode": "C_loso_control",
+      "truth_root": "emailservice",
+      "truth_fault": "mem",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": false,
+      "evidence_cited": 17,
+      "evidence_valid": 17,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 15,
+      "latency_ms": 113.71
+    },
+    {
+      "incident_id": "INC-738713e954",
+      "mode": "A_incident_only",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "mem",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 31,
+      "evidence_valid": 31,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.429,
+      "blast_recall": 0.75,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 38.74
+    },
+    {
+      "incident_id": "INC-738713e954",
+      "mode": "B_graph",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "mem",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "frontend",
+        "recommendationservice",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 31,
+      "evidence_valid": 31,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 115.53
+    },
+    {
+      "incident_id": "INC-738713e954",
+      "mode": "C_graph_memory",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "mem",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 31,
+      "evidence_valid": 31,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 3,
+      "memories_rejected": 0,
+      "latency_ms": 104.56
+    },
+    {
+      "incident_id": "INC-738713e954",
+      "mode": "C_loso_control",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "mem",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "productcatalogservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": false,
+      "evidence_cited": 31,
+      "evidence_valid": 31,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.5,
+      "memories_applicable": 1,
+      "memories_rejected": 5,
+      "latency_ms": 123.69
+    },
+    {
+      "incident_id": "INC-77ef80ca50",
+      "mode": "A_incident_only",
+      "truth_root": "emailservice",
+      "truth_fault": "cpu",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 8,
+      "evidence_valid": 8,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.333,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 25.1
+    },
+    {
+      "incident_id": "INC-77ef80ca50",
+      "mode": "B_graph",
+      "truth_root": "emailservice",
+      "truth_fault": "cpu",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 8,
+      "evidence_valid": 8,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 62.71
+    },
+    {
+      "incident_id": "INC-77ef80ca50",
+      "mode": "C_graph_memory",
+      "truth_root": "emailservice",
+      "truth_fault": "cpu",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 8,
+      "evidence_valid": 8,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 12,
+      "latency_ms": 87.02
+    },
+    {
+      "incident_id": "INC-77ef80ca50",
+      "mode": "C_loso_control",
+      "truth_root": "emailservice",
+      "truth_fault": "cpu",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 8,
+      "evidence_valid": 8,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 12,
+      "latency_ms": 73.47
+    },
+    {
+      "incident_id": "INC-81e6164407",
+      "mode": "A_incident_only",
+      "truth_root": "checkoutservice",
+      "truth_fault": "mem",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "paymentservice",
+        "emailservice",
+        "redis",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.25,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 33.14
+    },
+    {
+      "incident_id": "INC-81e6164407",
+      "mode": "B_graph",
+      "truth_root": "checkoutservice",
+      "truth_fault": "mem",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "paymentservice",
+        "emailservice",
+        "redis",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 23,
+      "evidence_valid": 23,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 95.09
+    },
+    {
+      "incident_id": "INC-81e6164407",
+      "mode": "C_graph_memory",
+      "truth_root": "checkoutservice",
+      "truth_fault": "mem",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "emailservice",
+        "paymentservice",
+        "redis",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 23,
+      "evidence_valid": 23,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 10,
+      "latency_ms": 97.03
+    },
+    {
+      "incident_id": "INC-81e6164407",
+      "mode": "C_loso_control",
+      "truth_root": "checkoutservice",
+      "truth_fault": "mem",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "emailservice",
+        "paymentservice",
+        "redis",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 23,
+      "evidence_valid": 23,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 18,
+      "latency_ms": 106.26
+    },
+    {
+      "incident_id": "INC-8303c8aa6d",
+      "mode": "A_incident_only",
+      "truth_root": "currencyservice",
+      "truth_fault": "delay",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "frontend",
+        "paymentservice",
+        "adservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.5,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 43.94
+    },
+    {
+      "incident_id": "INC-8303c8aa6d",
+      "mode": "B_graph",
+      "truth_root": "currencyservice",
+      "truth_fault": "delay",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "checkoutservice",
+        "frontend",
+        "paymentservice",
+        "adservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 104.59
+    },
+    {
+      "incident_id": "INC-8303c8aa6d",
+      "mode": "C_graph_memory",
+      "truth_root": "currencyservice",
+      "truth_fault": "delay",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "currencyservice",
+        "frontend",
+        "paymentservice",
+        "adservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "worsened",
+      "blast_precision": 1.0,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 12,
+      "latency_ms": 132.0
+    },
+    {
+      "incident_id": "INC-8303c8aa6d",
+      "mode": "C_loso_control",
+      "truth_root": "currencyservice",
+      "truth_fault": "delay",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "currencyservice",
+        "frontend",
+        "paymentservice",
+        "adservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 26,
+      "evidence_valid": 26,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "worsened",
+      "blast_precision": 1.0,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 16,
+      "latency_ms": 138.8
+    },
+    {
+      "incident_id": "INC-88785794b0",
+      "mode": "A_incident_only",
+      "truth_root": "recommendationservice",
+      "truth_fault": "socket",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 2,
+      "evidence_valid": 2,
+      "action": {
+        "type": "restart_service",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.0,
+      "blast_recall": 0.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 12.08
+    },
+    {
+      "incident_id": "INC-88785794b0",
+      "mode": "B_graph",
+      "truth_root": "recommendationservice",
+      "truth_fault": "socket",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 2,
+      "evidence_valid": 2,
+      "action": {
+        "type": "restart_service",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 64.43
+    },
+    {
+      "incident_id": "INC-88785794b0",
+      "mode": "C_graph_memory",
+      "truth_root": "recommendationservice",
+      "truth_fault": "socket",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 2,
+      "evidence_valid": 2,
+      "action": {
+        "type": "restart_service",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 11,
+      "latency_ms": 69.97
+    },
+    {
+      "incident_id": "INC-88785794b0",
+      "mode": "C_loso_control",
+      "truth_root": "recommendationservice",
+      "truth_fault": "socket",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 2,
+      "evidence_valid": 2,
+      "action": {
+        "type": "restart_service",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 4,
+      "latency_ms": 65.11
+    },
+    {
+      "incident_id": "INC-8f58f55a61",
+      "mode": "A_incident_only",
+      "truth_root": "emailservice",
+      "truth_fault": "loss",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 10,
+      "evidence_valid": 10,
+      "action": {
+        "type": "restart_service",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.333,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 20.25
+    },
+    {
+      "incident_id": "INC-8f58f55a61",
+      "mode": "B_graph",
+      "truth_root": "emailservice",
+      "truth_fault": "loss",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 10,
+      "evidence_valid": 10,
+      "action": {
+        "type": "restart_service",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 75.91
+    },
+    {
+      "incident_id": "INC-8f58f55a61",
+      "mode": "C_graph_memory",
+      "truth_root": "emailservice",
+      "truth_fault": "loss",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 10,
+      "evidence_valid": 10,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 13,
+      "latency_ms": 87.92
+    },
+    {
+      "incident_id": "INC-8f58f55a61",
+      "mode": "C_loso_control",
+      "truth_root": "emailservice",
+      "truth_fault": "loss",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 10,
+      "evidence_valid": 10,
+      "action": {
+        "type": "restart_service",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 20,
+      "latency_ms": 172.32
+    },
+    {
+      "incident_id": "INC-928369cfc9",
+      "mode": "A_incident_only",
+      "truth_root": "recommendationservice",
+      "truth_fault": "mem",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.5,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 30.53
+    },
+    {
+      "incident_id": "INC-928369cfc9",
+      "mode": "B_graph",
+      "truth_root": "recommendationservice",
+      "truth_fault": "mem",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 105.33
+    },
+    {
+      "incident_id": "INC-928369cfc9",
+      "mode": "C_graph_memory",
+      "truth_root": "recommendationservice",
+      "truth_fault": "mem",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 12,
+      "latency_ms": 114.54
+    },
+    {
+      "incident_id": "INC-928369cfc9",
+      "mode": "C_loso_control",
+      "truth_root": "recommendationservice",
+      "truth_fault": "mem",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 20,
+      "latency_ms": 103.27
+    },
+    {
+      "incident_id": "INC-9f347d5825",
+      "mode": "A_incident_only",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "socket",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 17,
+      "evidence_valid": 17,
+      "action": {
+        "type": "restart_service",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.667,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 34.13
+    },
+    {
+      "incident_id": "INC-9f347d5825",
+      "mode": "B_graph",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "socket",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 17,
+      "evidence_valid": 17,
+      "action": {
+        "type": "restart_service",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 148.94
+    },
+    {
+      "incident_id": "INC-9f347d5825",
+      "mode": "C_graph_memory",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "socket",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 17,
+      "evidence_valid": 17,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 3,
+      "memories_rejected": 7,
+      "latency_ms": 167.53
+    },
+    {
+      "incident_id": "INC-9f347d5825",
+      "mode": "C_loso_control",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "socket",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 17,
+      "evidence_valid": 17,
+      "action": {
+        "type": "restart_service",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 15,
+      "latency_ms": 176.82
+    },
+    {
+      "incident_id": "INC-a5ba7319f8",
+      "mode": "A_incident_only",
+      "truth_root": "recommendationservice",
+      "truth_fault": "cpu",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 15,
+      "evidence_valid": 15,
+      "action": {
+        "type": "scale_out",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.5,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 44.45
+    },
+    {
+      "incident_id": "INC-a5ba7319f8",
+      "mode": "B_graph",
+      "truth_root": "recommendationservice",
+      "truth_fault": "cpu",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 15,
+      "evidence_valid": 15,
+      "action": {
+        "type": "scale_out",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 89.52
+    },
+    {
+      "incident_id": "INC-a5ba7319f8",
+      "mode": "C_graph_memory",
+      "truth_root": "recommendationservice",
+      "truth_fault": "cpu",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 15,
+      "evidence_valid": 15,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 12,
+      "latency_ms": 100.26
+    },
+    {
+      "incident_id": "INC-a5ba7319f8",
+      "mode": "C_loso_control",
+      "truth_root": "recommendationservice",
+      "truth_fault": "cpu",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 15,
+      "evidence_valid": 15,
+      "action": {
+        "type": "scale_out",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 17,
+      "latency_ms": 120.87
+    },
+    {
+      "incident_id": "INC-b55c7e08e6",
+      "mode": "A_incident_only",
+      "truth_root": "emailservice",
+      "truth_fault": "socket",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": false,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 0.0,
+      "blast_recall": 0.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 18.44
+    },
+    {
+      "incident_id": "INC-b55c7e08e6",
+      "mode": "B_graph",
+      "truth_root": "emailservice",
+      "truth_fault": "socket",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": false,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 76.78
+    },
+    {
+      "incident_id": "INC-b55c7e08e6",
+      "mode": "C_graph_memory",
+      "truth_root": "emailservice",
+      "truth_fault": "socket",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": false,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 3,
+      "memories_rejected": 13,
+      "latency_ms": 79.51
+    },
+    {
+      "incident_id": "INC-b55c7e08e6",
+      "mode": "C_loso_control",
+      "truth_root": "emailservice",
+      "truth_fault": "socket",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": false,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "scale_out",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 15,
+      "latency_ms": 79.61
+    },
+    {
+      "incident_id": "INC-c44771b64c",
+      "mode": "A_incident_only",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "loss",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice",
+        "checkoutservice",
+        "adservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.6,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 34,
+      "evidence_valid": 34,
+      "action": {
+        "type": "restart_service",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 0.273,
+      "blast_recall": 0.75,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 32.53
+    },
+    {
+      "incident_id": "INC-c44771b64c",
+      "mode": "B_graph",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "loss",
+      "predicted": "frontend",
+      "ranked": [
+        "frontend",
+        "productcatalogservice",
+        "checkoutservice",
+        "recommendationservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 36,
+      "evidence_valid": 36,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "frontend",
+        "params": {}
+      },
+      "action_outcome": "worsened",
+      "blast_precision": 1.0,
+      "blast_recall": 0.25,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 135.05
+    },
+    {
+      "incident_id": "INC-c44771b64c",
+      "mode": "C_graph_memory",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "loss",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "checkoutservice",
+        "frontend",
+        "emailservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 36,
+      "evidence_valid": 36,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 4,
+      "memories_rejected": 0,
+      "latency_ms": 112.14
+    },
+    {
+      "incident_id": "INC-c44771b64c",
+      "mode": "C_loso_control",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "loss",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "checkoutservice",
+        "frontend",
+        "emailservice",
+        "productcatalogservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": false,
+      "avg5": 0.2,
+      "fault_class_pred": "socket",
+      "fault_class_ok": false,
+      "evidence_cited": 36,
+      "evidence_valid": 36,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.5,
+      "memories_applicable": 2,
+      "memories_rejected": 2,
+      "latency_ms": 78.13
+    },
+    {
+      "incident_id": "INC-c4d75c5c3b",
+      "mode": "A_incident_only",
+      "truth_root": "checkoutservice",
+      "truth_fault": "delay",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "emailservice",
+        "shippingservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.0,
+      "blast_recall": 0.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 33.91
+    },
+    {
+      "incident_id": "INC-c4d75c5c3b",
+      "mode": "B_graph",
+      "truth_root": "checkoutservice",
+      "truth_fault": "delay",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "emailservice",
+        "shippingservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 85.03
+    },
+    {
+      "incident_id": "INC-c4d75c5c3b",
+      "mode": "C_graph_memory",
+      "truth_root": "checkoutservice",
+      "truth_fault": "delay",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "emailservice",
+        "shippingservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 14,
+      "latency_ms": 95.25
+    },
+    {
+      "incident_id": "INC-c4d75c5c3b",
+      "mode": "C_loso_control",
+      "truth_root": "checkoutservice",
+      "truth_fault": "delay",
+      "predicted": "emailservice",
+      "ranked": [
+        "emailservice",
+        "checkoutservice",
+        "shippingservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 22,
+      "evidence_valid": 22,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "emailservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 0.667,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 18,
+      "latency_ms": 92.76
+    },
+    {
+      "incident_id": "INC-cf69d5cdf8",
+      "mode": "A_incident_only",
+      "truth_root": "checkoutservice",
+      "truth_fault": "disk",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "frontend",
+        "adservice",
+        "emailservice",
+        "paymentservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": false,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 0.25,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 16.26
+    },
+    {
+      "incident_id": "INC-cf69d5cdf8",
+      "mode": "B_graph",
+      "truth_root": "checkoutservice",
+      "truth_fault": "disk",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "emailservice",
+        "paymentservice",
+        "frontend",
+        "adservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": false,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 58.14
+    },
+    {
+      "incident_id": "INC-cf69d5cdf8",
+      "mode": "C_graph_memory",
+      "truth_root": "checkoutservice",
+      "truth_fault": "disk",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "emailservice",
+        "paymentservice",
+        "frontend",
+        "adservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": false,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 10,
+      "latency_ms": 64.88
+    },
+    {
+      "incident_id": "INC-cf69d5cdf8",
+      "mode": "C_loso_control",
+      "truth_root": "checkoutservice",
+      "truth_fault": "disk",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "emailservice",
+        "paymentservice",
+        "frontend",
+        "adservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": false,
+      "evidence_cited": 14,
+      "evidence_valid": 14,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 18,
+      "latency_ms": 68.35
+    },
+    {
+      "incident_id": "INC-d6f6269f66",
+      "mode": "A_incident_only",
+      "truth_root": "checkoutservice",
+      "truth_fault": "loss",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.0,
+      "blast_recall": 0.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 19.06
+    },
+    {
+      "incident_id": "INC-d6f6269f66",
+      "mode": "B_graph",
+      "truth_root": "checkoutservice",
+      "truth_fault": "loss",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 54.07
+    },
+    {
+      "incident_id": "INC-d6f6269f66",
+      "mode": "C_graph_memory",
+      "truth_root": "checkoutservice",
+      "truth_fault": "loss",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 15,
+      "latency_ms": 63.29
+    },
+    {
+      "incident_id": "INC-d6f6269f66",
+      "mode": "C_loso_control",
+      "truth_root": "checkoutservice",
+      "truth_fault": "loss",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": null,
+      "action_outcome": null,
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 19,
+      "latency_ms": 61.32
+    },
+    {
+      "incident_id": "INC-f8a5b9e5d8",
+      "mode": "A_incident_only",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "delay",
+      "predicted": "frontend",
+      "ranked": [
+        "frontend",
+        "recommendationservice",
+        "productcatalogservice",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.6,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 32,
+      "evidence_valid": 32,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "frontend",
+        "params": {}
+      },
+      "action_outcome": "worsened",
+      "blast_precision": 0.429,
+      "blast_recall": 0.75,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 41.27
+    },
+    {
+      "incident_id": "INC-f8a5b9e5d8",
+      "mode": "B_graph",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "delay",
+      "predicted": "frontend",
+      "ranked": [
+        "frontend",
+        "productcatalogservice",
+        "recommendationservice",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 32,
+      "evidence_valid": 32,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "frontend",
+        "params": {}
+      },
+      "action_outcome": "worsened",
+      "blast_precision": 1.0,
+      "blast_recall": 0.25,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 92.41
+    },
+    {
+      "incident_id": "INC-f8a5b9e5d8",
+      "mode": "C_graph_memory",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "delay",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "productcatalogservice",
+        "frontend",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.8,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 32,
+      "evidence_valid": 32,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.5,
+      "memories_applicable": 1,
+      "memories_rejected": 7,
+      "latency_ms": 108.91
+    },
+    {
+      "incident_id": "INC-f8a5b9e5d8",
+      "mode": "C_loso_control",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "delay",
+      "predicted": "recommendationservice",
+      "ranked": [
+        "recommendationservice",
+        "frontend",
+        "productcatalogservice",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": false,
+      "top3": true,
+      "avg5": 0.6,
+      "fault_class_pred": "network",
+      "fault_class_ok": true,
+      "evidence_cited": 32,
+      "evidence_valid": 32,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "recommendationservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.5,
+      "memories_applicable": 1,
+      "memories_rejected": 8,
+      "latency_ms": 95.68
+    },
+    {
+      "incident_id": "INC-ffacf9bec7",
+      "mode": "A_incident_only",
+      "truth_root": "currencyservice",
+      "truth_fault": "mem",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "adservice",
+        "frontend",
+        "checkoutservice",
+        "recommendationservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 29,
+      "evidence_valid": 29,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 0.286,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 32.82
+    },
+    {
+      "incident_id": "INC-ffacf9bec7",
+      "mode": "B_graph",
+      "truth_root": "currencyservice",
+      "truth_fault": "mem",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "frontend",
+        "adservice",
+        "checkoutservice",
+        "cartservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 29,
+      "evidence_valid": 29,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 89.85
+    },
+    {
+      "incident_id": "INC-ffacf9bec7",
+      "mode": "C_graph_memory",
+      "truth_root": "currencyservice",
+      "truth_fault": "mem",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "frontend",
+        "checkoutservice",
+        "adservice",
+        "recommendationservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 29,
+      "evidence_valid": 29,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 2,
+      "memories_rejected": 5,
+      "latency_ms": 75.4
+    },
+    {
+      "incident_id": "INC-ffacf9bec7",
+      "mode": "C_loso_control",
+      "truth_root": "currencyservice",
+      "truth_fault": "mem",
+      "predicted": "currencyservice",
+      "ranked": [
+        "currencyservice",
+        "frontend",
+        "checkoutservice",
+        "adservice",
+        "recommendationservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 29,
+      "evidence_valid": 29,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "currencyservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 14,
+      "latency_ms": 97.15
+    }
+  ],
+  "rows_synthetic": [
+    {
+      "incident_id": "SYN-redis-mem-1",
+      "mode": "A_incident_only",
+      "truth_root": "redis",
+      "truth_fault": "mem",
+      "predicted": "redis",
+      "ranked": [
+        "redis",
+        "cartservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 8,
+      "evidence_valid": 8,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "redis",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.75,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 30.98
+    },
+    {
+      "incident_id": "SYN-redis-mem-1",
+      "mode": "B_graph",
+      "truth_root": "redis",
+      "truth_fault": "mem",
+      "predicted": "redis",
+      "ranked": [
+        "redis",
+        "cartservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 8,
+      "evidence_valid": 8,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "redis",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 81.23
+    },
+    {
+      "incident_id": "SYN-redis-mem-1",
+      "mode": "C_graph_memory",
+      "truth_root": "redis",
+      "truth_fault": "mem",
+      "predicted": "redis",
+      "ranked": [
+        "redis",
+        "cartservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 8,
+      "evidence_valid": 8,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "redis",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 68.55
+    },
+    {
+      "incident_id": "SYN-redis-mem-2",
+      "mode": "A_incident_only",
+      "truth_root": "redis",
+      "truth_fault": "mem",
+      "predicted": "redis",
+      "ranked": [
+        "redis",
+        "cartservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "redis",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.75,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 29.63
+    },
+    {
+      "incident_id": "SYN-redis-mem-2",
+      "mode": "B_graph",
+      "truth_root": "redis",
+      "truth_fault": "mem",
+      "predicted": "redis",
+      "ranked": [
+        "redis",
+        "cartservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "redis",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 87.75
+    },
+    {
+      "incident_id": "SYN-redis-mem-2",
+      "mode": "C_graph_memory",
+      "truth_root": "redis",
+      "truth_fault": "mem",
+      "predicted": "redis",
+      "ranked": [
+        "redis",
+        "cartservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "memory",
+      "fault_class_ok": true,
+      "evidence_cited": 6,
+      "evidence_valid": 6,
+      "action": {
+        "type": "increase_memory_limit",
+        "target": "redis",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 1,
+      "memories_rejected": 0,
+      "latency_ms": 110.44
+    },
+    {
+      "incident_id": "SYN-cart-deploy",
+      "mode": "A_incident_only",
+      "truth_root": "cartservice",
+      "truth_fault": "deployment_regression",
+      "predicted": "cartservice",
+      "ranked": [
+        "cartservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "network",
+      "fault_class_ok": false,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "reschedule_pod",
+        "target": "cartservice",
+        "params": {}
+      },
+      "action_outcome": "not_resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 38.9
+    },
+    {
+      "incident_id": "SYN-cart-deploy",
+      "mode": "B_graph",
+      "truth_root": "cartservice",
+      "truth_fault": "deployment_regression",
+      "predicted": "cartservice",
+      "ranked": [
+        "cartservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "deployment_regression",
+      "fault_class_ok": true,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "rollback_deployment",
+        "target": "cartservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 123.11
+    },
+    {
+      "incident_id": "SYN-cart-deploy",
+      "mode": "C_graph_memory",
+      "truth_root": "cartservice",
+      "truth_fault": "deployment_regression",
+      "predicted": "cartservice",
+      "ranked": [
+        "cartservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "deployment_regression",
+      "fault_class_ok": true,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "rollback_deployment",
+        "target": "cartservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 2,
+      "latency_ms": 275.62
+    },
+    {
+      "incident_id": "SYN-payment-unrelated-deploy",
+      "mode": "A_incident_only",
+      "truth_root": "paymentservice",
+      "truth_fault": "cpu",
+      "predicted": "paymentservice",
+      "ranked": [
+        "paymentservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 4,
+      "evidence_valid": 4,
+      "action": {
+        "type": "scale_out",
+        "target": "paymentservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.667,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 54.63
+    },
+    {
+      "incident_id": "SYN-payment-unrelated-deploy",
+      "mode": "B_graph",
+      "truth_root": "paymentservice",
+      "truth_fault": "cpu",
+      "predicted": "paymentservice",
+      "ranked": [
+        "paymentservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 4,
+      "evidence_valid": 4,
+      "action": {
+        "type": "scale_out",
+        "target": "paymentservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 126.12
+    },
+    {
+      "incident_id": "SYN-payment-unrelated-deploy",
+      "mode": "C_graph_memory",
+      "truth_root": "paymentservice",
+      "truth_fault": "cpu",
+      "predicted": "paymentservice",
+      "ranked": [
+        "paymentservice",
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 4,
+      "evidence_valid": 4,
+      "action": {
+        "type": "scale_out",
+        "target": "paymentservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 3,
+      "latency_ms": 136.48
+    },
+    {
+      "incident_id": "SYN-catalog-shared",
+      "mode": "A_incident_only",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "cpu",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "recommendationservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "scale_out",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.75,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 41.58
+    },
+    {
+      "incident_id": "SYN-catalog-shared",
+      "mode": "B_graph",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "cpu",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "frontend",
+        "recommendationservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "scale_out",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 135.74
+    },
+    {
+      "incident_id": "SYN-catalog-shared",
+      "mode": "C_graph_memory",
+      "truth_root": "productcatalogservice",
+      "truth_fault": "cpu",
+      "predicted": "productcatalogservice",
+      "ranked": [
+        "productcatalogservice",
+        "frontend",
+        "recommendationservice",
+        "checkoutservice"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "cpu",
+      "fault_class_ok": true,
+      "evidence_cited": 7,
+      "evidence_valid": 7,
+      "action": {
+        "type": "scale_out",
+        "target": "productcatalogservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 4,
+      "latency_ms": 167.89
+    },
+    {
+      "incident_id": "SYN-checkout-socket-1",
+      "mode": "A_incident_only",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 18.21
+    },
+    {
+      "incident_id": "SYN-checkout-socket-1",
+      "mode": "B_graph",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 113.5
+    },
+    {
+      "incident_id": "SYN-checkout-socket-1",
+      "mode": "C_graph_memory",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 5,
+      "latency_ms": 113.68
+    },
+    {
+      "incident_id": "SYN-checkout-socket-2",
+      "mode": "A_incident_only",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 0.5,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 13.5
+    },
+    {
+      "incident_id": "SYN-checkout-socket-2",
+      "mode": "B_graph",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 0,
+      "latency_ms": 92.31
+    },
+    {
+      "incident_id": "SYN-checkout-socket-2",
+      "mode": "C_graph_memory",
+      "truth_root": "checkoutservice",
+      "truth_fault": "socket",
+      "predicted": "checkoutservice",
+      "ranked": [
+        "checkoutservice",
+        "frontend"
+      ],
+      "conclusion": "root_cause_hypothesis",
+      "top1": true,
+      "top3": true,
+      "avg5": 1.0,
+      "fault_class_pred": "socket",
+      "fault_class_ok": true,
+      "evidence_cited": 5,
+      "evidence_valid": 5,
+      "action": {
+        "type": "restart_service",
+        "target": "checkoutservice",
+        "params": {}
+      },
+      "action_outcome": "resolved",
+      "blast_precision": 1.0,
+      "blast_recall": 1.0,
+      "memories_applicable": 0,
+      "memories_rejected": 5,
+      "latency_ms": 106.68
+    }
+  ],
+  "elapsed_s": 31.7
+}

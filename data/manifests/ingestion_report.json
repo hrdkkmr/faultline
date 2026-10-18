@@ -1,0 +1,1971 @@
+{
+  "generated_at": "2026-10-16T13:53:01+00:00",
+  "source": {
+    "hf_repo": "phamquiluan/RCAEval",
+    "revision": "afeacb11bcc94dadfd1c8f483ee4377b2b8b614e",
+    "dataset": "RE2-OB",
+    "license": "MIT (RCAEval datasets)"
+  },
+  "selection": "full(RE2-OB reps=[1, 2, 3])",
+  "cases_discovered_in_index": 90,
+  "cases_selected": 90,
+  "cases_loaded": 90,
+  "cases_rejected": [],
+  "telemetry_available": {
+    "metrics": 90,
+    "logs": 90,
+    "traces": 90
+  },
+  "ground_truth_fields": [
+    "root_cause_service",
+    "fault"
+  ],
+  "ground_truth_location": "data/eval/rcaeval_labels.json (evaluation only; not in graph)",
+  "recurring_warnings": {
+    "no spans for services: adservice, cartservice, redis, shippingservice": 90
+  },
+  "per_case": [
+    {
+      "incident_id": "INC-7eac1dc380",
+      "observations": 106,
+      "anomalous": 3,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-671143ac7e",
+      "observations": 106,
+      "anomalous": 9,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "InboundPassthroughClusterIpv4_workload",
+          "PassthroughCluster_workload"
+        ],
+        "unknown_services": [
+          "inboundpassthroughclusteripv4",
+          "passthroughcluster"
+        ],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-508c0435a9",
+      "observations": 108,
+      "anomalous": 7,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-c5c78ab3da",
+      "observations": 109,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-c4d75c5c3b",
+      "observations": 109,
+      "anomalous": 9,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-b3bcecd0be",
+      "observations": 109,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-2e1aba007c",
+      "observations": 107,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "checkoutservice_diskio"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-cf69d5cdf8",
+      "observations": 102,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 69
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "checkoutservice_diskio"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-4a6b234953",
+      "observations": 104,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 70
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-d421885127",
+      "observations": 108,
+      "anomalous": 9,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-d6f6269f66",
+      "observations": 109,
+      "anomalous": 3,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-332a70d0bb",
+      "observations": 103,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 73
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "frontend-check_mem",
+          "frontend-check_socket",
+          "frontend_error",
+          "frontend-external_error"
+        ],
+        "unknown_services": [
+          "frontend-check"
+        ],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-185c3f7b3f",
+      "observations": 104,
+      "anomalous": 12,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 70
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-81e6164407",
+      "observations": 108,
+      "anomalous": 11,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "cartservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-da786afd64",
+      "observations": 109,
+      "anomalous": 12,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-7710717297",
+      "observations": 109,
+      "anomalous": 5,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 77
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "istio-init_mem",
+          "istio-init_socket"
+        ],
+        "unknown_services": [
+          "istio-init"
+        ],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-040f14f038",
+      "observations": 109,
+      "anomalous": 4,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-8fe2608385",
+      "observations": 109,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-b9c22caef9",
+      "observations": 109,
+      "anomalous": 15,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-600a2ab220",
+      "observations": 109,
+      "anomalous": 12,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-5afe6a7b6c",
+      "observations": 109,
+      "anomalous": 14,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-c164d228ab",
+      "observations": 110,
+      "anomalous": 11,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-8303c8aa6d",
+      "observations": 108,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-159f995ad5",
+      "observations": 108,
+      "anomalous": 9,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-57c35485c0",
+      "observations": 107,
+      "anomalous": 19,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "currencyservice_diskio"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-19cccdb4c1",
+      "observations": 110,
+      "anomalous": 14,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-dc0e2e9b22",
+      "observations": 110,
+      "anomalous": 14,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-18dc80da60",
+      "observations": 108,
+      "anomalous": 50,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-383ebfd77e",
+      "observations": 110,
+      "anomalous": 38,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-80fba317ed",
+      "observations": 109,
+      "anomalous": 29,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-9c15e21d5a",
+      "observations": 104,
+      "anomalous": 23,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 70
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-ffacf9bec7",
+      "observations": 109,
+      "anomalous": 26,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-1639f7cad7",
+      "observations": 109,
+      "anomalous": 23,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "adservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-e7d8b44157",
+      "observations": 105,
+      "anomalous": 2,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-5d70f71632",
+      "observations": 110,
+      "anomalous": 13,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-7a1f725efd",
+      "observations": 110,
+      "anomalous": 19,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 76
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-c91099c30d",
+      "observations": 106,
+      "anomalous": 5,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-77ef80ca50",
+      "observations": 108,
+      "anomalous": 5,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-4a0376ed14",
+      "observations": 108,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-c0de36c6c8",
+      "observations": 108,
+      "anomalous": 5,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-6730e7f42d",
+      "observations": 108,
+      "anomalous": 5,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-8a824da807",
+      "observations": 108,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-e6651459c7",
+      "observations": 107,
+      "anomalous": 5,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 73
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-1a8c47d522",
+      "observations": 108,
+      "anomalous": 5,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-8d5505e18d",
+      "observations": 109,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-29f0c35d87",
+      "observations": 106,
+      "anomalous": 9,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-8f58f55a61",
+      "observations": 108,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-b18896b504",
+      "observations": 108,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-7400050ba3",
+      "observations": 105,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-6e362be36f",
+      "observations": 108,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-035fde2c59",
+      "observations": 108,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-46aa122ede",
+      "observations": 108,
+      "anomalous": 5,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-b55c7e08e6",
+      "observations": 108,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-e14a106e70",
+      "observations": 108,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-3845c959bd",
+      "observations": 105,
+      "anomalous": 12,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-3a978d4183",
+      "observations": 104,
+      "anomalous": 14,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 70
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-629d6942d8",
+      "observations": 104,
+      "anomalous": 20,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 70
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-669a4ad22a",
+      "observations": 105,
+      "anomalous": 30,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-f8a5b9e5d8",
+      "observations": 106,
+      "anomalous": 21,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-6a8a1c34d7",
+      "observations": 106,
+      "anomalous": 19,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 73
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "frontend-external_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-c493281765",
+      "observations": 106,
+      "anomalous": 11,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 73
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "productcatalogservice_diskio"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-5eed0ae6b0",
+      "observations": 105,
+      "anomalous": 19,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "productcatalogservice_diskio"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-6b91116399",
+      "observations": 105,
+      "anomalous": 16,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "frontend_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-d3b611e79b",
+      "observations": 107,
+      "anomalous": 56,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "productcatalogservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-c44771b64c",
+      "observations": 109,
+      "anomalous": 58,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "productcatalogservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-228a267846",
+      "observations": 110,
+      "anomalous": 42,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 75
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "productcatalogservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-469c9b8712",
+      "observations": 106,
+      "anomalous": 40,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-738713e954",
+      "observations": 104,
+      "anomalous": 27,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "adservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-8e831b9c85",
+      "observations": 105,
+      "anomalous": 34,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-819eb97aef",
+      "observations": 105,
+      "anomalous": 17,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-9f347d5825",
+      "observations": 105,
+      "anomalous": 13,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-0c625ac9fe",
+      "observations": 105,
+      "anomalous": 3,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-027e503593",
+      "observations": 106,
+      "anomalous": 7,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-a5ba7319f8",
+      "observations": 108,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-6c0c1ff226",
+      "observations": 108,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-c5da4c865c",
+      "observations": 105,
+      "anomalous": 9,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-6092e380f4",
+      "observations": 108,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-82f8913a54",
+      "observations": 108,
+      "anomalous": 7,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-2dd32eb82e",
+      "observations": 107,
+      "anomalous": 6,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 73
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-0bc276d10f",
+      "observations": 108,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-e75820e602",
+      "observations": 108,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-7531550912",
+      "observations": 108,
+      "anomalous": 45,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 73
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "productcatalogservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-0e92f00a1e",
+      "observations": 105,
+      "anomalous": 22,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 72
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "productcatalogservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-0f314b6375",
+      "observations": 102,
+      "anomalous": 19,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 69
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [
+          "productcatalogservice_error"
+        ],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-ed9bd8a6cd",
+      "observations": 104,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 70
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-928369cfc9",
+      "observations": 108,
+      "anomalous": 10,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-14cc724750",
+      "observations": 108,
+      "anomalous": 8,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-b1c8a781a7",
+      "observations": 105,
+      "anomalous": 20,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 71
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-88785794b0",
+      "observations": 108,
+      "anomalous": 2,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    },
+    {
+      "incident_id": "INC-6c5852df84",
+      "observations": 108,
+      "anomalous": 2,
+      "calls": 9,
+      "telemetry": {
+        "metrics": true,
+        "logs": true,
+        "traces": true,
+        "metric_columns": 74
+      },
+      "quality": {
+        "missing_files": [],
+        "unparsed_metric_columns": [],
+        "sparse_metric_columns": [],
+        "unknown_services": [],
+        "warnings": [
+          "no spans for services: adservice, cartservice, redis, shippingservice"
+        ]
+      }
+    }
+  ],
+  "code_version": "faultline 0.1.0",
+  "elapsed_s": 132.4
+}

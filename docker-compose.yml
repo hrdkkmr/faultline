@@ -1,0 +1,24 @@
+services:
+  falkordb:
+    image: falkordb/falkordb:v4.22.0
+    container_name: faultline-falkordb
+    ports:
+      - "${FALKORDB_PORT:-6379}:6379"
+      - "${FALKORDB_BROWSER_PORT:-3000}:3000"
+    environment:
+      # RDB snapshots: every 60 s if at least 1 write, plus a final snapshot on graceful shutdown (docker stop).
+      # AOF is deliberately disabled: FalkorDB v4.22.0 crashed replaying GRAPH.EFFECT entries in our tests, and a
+      # verbatim-replication workaround made replay take hours. See KNOWN_LIMITATIONS.md.
+      REDIS_ARGS: "--appendonly no --save 60 1"
+      FALKORDB_ARGS: "MAX_QUEUED_QUERIES 25 TIMEOUT 5000 RESULTSET_SIZE 10000"
+    volumes:
+      - falkordb_data:/var/lib/falkordb/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "PING"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+volumes:
+  falkordb_data:

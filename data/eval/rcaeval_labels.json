@@ -1,0 +1,722 @@
+{
+  "INC-7eac1dc380": {
+    "root_cause_service": "checkoutservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-671143ac7e": {
+    "root_cause_service": "checkoutservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-508c0435a9": {
+    "root_cause_service": "checkoutservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-c5c78ab3da": {
+    "root_cause_service": "checkoutservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-c4d75c5c3b": {
+    "root_cause_service": "checkoutservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-b3bcecd0be": {
+    "root_cause_service": "checkoutservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-2e1aba007c": {
+    "root_cause_service": "checkoutservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-cf69d5cdf8": {
+    "root_cause_service": "checkoutservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-4a6b234953": {
+    "root_cause_service": "checkoutservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-d421885127": {
+    "root_cause_service": "checkoutservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-d6f6269f66": {
+    "root_cause_service": "checkoutservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-332a70d0bb": {
+    "root_cause_service": "checkoutservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-185c3f7b3f": {
+    "root_cause_service": "checkoutservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-81e6164407": {
+    "root_cause_service": "checkoutservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-da786afd64": {
+    "root_cause_service": "checkoutservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-7710717297": {
+    "root_cause_service": "checkoutservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-040f14f038": {
+    "root_cause_service": "checkoutservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-8fe2608385": {
+    "root_cause_service": "checkoutservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-b9c22caef9": {
+    "root_cause_service": "currencyservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-600a2ab220": {
+    "root_cause_service": "currencyservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-5afe6a7b6c": {
+    "root_cause_service": "currencyservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-c164d228ab": {
+    "root_cause_service": "currencyservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-8303c8aa6d": {
+    "root_cause_service": "currencyservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-159f995ad5": {
+    "root_cause_service": "currencyservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-57c35485c0": {
+    "root_cause_service": "currencyservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-19cccdb4c1": {
+    "root_cause_service": "currencyservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-dc0e2e9b22": {
+    "root_cause_service": "currencyservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-18dc80da60": {
+    "root_cause_service": "currencyservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-383ebfd77e": {
+    "root_cause_service": "currencyservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-80fba317ed": {
+    "root_cause_service": "currencyservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-9c15e21d5a": {
+    "root_cause_service": "currencyservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-ffacf9bec7": {
+    "root_cause_service": "currencyservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-1639f7cad7": {
+    "root_cause_service": "currencyservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-e7d8b44157": {
+    "root_cause_service": "currencyservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-5d70f71632": {
+    "root_cause_service": "currencyservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-7a1f725efd": {
+    "root_cause_service": "currencyservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-c91099c30d": {
+    "root_cause_service": "emailservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-77ef80ca50": {
+    "root_cause_service": "emailservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-4a0376ed14": {
+    "root_cause_service": "emailservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-c0de36c6c8": {
+    "root_cause_service": "emailservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-6730e7f42d": {
+    "root_cause_service": "emailservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-8a824da807": {
+    "root_cause_service": "emailservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-e6651459c7": {
+    "root_cause_service": "emailservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-1a8c47d522": {
+    "root_cause_service": "emailservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-8d5505e18d": {
+    "root_cause_service": "emailservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-29f0c35d87": {
+    "root_cause_service": "emailservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-8f58f55a61": {
+    "root_cause_service": "emailservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-b18896b504": {
+    "root_cause_service": "emailservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-7400050ba3": {
+    "root_cause_service": "emailservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-6e362be36f": {
+    "root_cause_service": "emailservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-035fde2c59": {
+    "root_cause_service": "emailservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-46aa122ede": {
+    "root_cause_service": "emailservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-b55c7e08e6": {
+    "root_cause_service": "emailservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-e14a106e70": {
+    "root_cause_service": "emailservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-3845c959bd": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-3a978d4183": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-629d6942d8": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-669a4ad22a": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-f8a5b9e5d8": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-6a8a1c34d7": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-c493281765": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-5eed0ae6b0": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-6b91116399": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-d3b611e79b": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-c44771b64c": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-228a267846": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-469c9b8712": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-738713e954": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-8e831b9c85": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-819eb97aef": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-9f347d5825": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-0c625ac9fe": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-027e503593": {
+    "root_cause_service": "recommendationservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-a5ba7319f8": {
+    "root_cause_service": "recommendationservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-6c0c1ff226": {
+    "root_cause_service": "recommendationservice",
+    "fault": "cpu",
+    "fault_description": "CPU stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-c5da4c865c": {
+    "root_cause_service": "recommendationservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-6092e380f4": {
+    "root_cause_service": "recommendationservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-82f8913a54": {
+    "root_cause_service": "recommendationservice",
+    "fault": "delay",
+    "fault_description": "network delay",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-2dd32eb82e": {
+    "root_cause_service": "recommendationservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-0bc276d10f": {
+    "root_cause_service": "recommendationservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-e75820e602": {
+    "root_cause_service": "recommendationservice",
+    "fault": "disk",
+    "fault_description": "disk I/O stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-7531550912": {
+    "root_cause_service": "recommendationservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-0e92f00a1e": {
+    "root_cause_service": "recommendationservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-0f314b6375": {
+    "root_cause_service": "recommendationservice",
+    "fault": "loss",
+    "fault_description": "network packet loss",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-ed9bd8a6cd": {
+    "root_cause_service": "recommendationservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-928369cfc9": {
+    "root_cause_service": "recommendationservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-14cc724750": {
+    "root_cause_service": "recommendationservice",
+    "fault": "mem",
+    "fault_description": "memory stress",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-b1c8a781a7": {
+    "root_cause_service": "recommendationservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 1,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-88785794b0": {
+    "root_cause_service": "recommendationservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 2,
+    "source": "rcaeval cases.parquet"
+  },
+  "INC-6c5852df84": {
+    "root_cause_service": "recommendationservice",
+    "fault": "socket",
+    "fault_description": "socket exhaustion",
+    "dataset": "RE2-OB",
+    "repetition": 3,
+    "source": "rcaeval cases.parquet"
+  }
+}

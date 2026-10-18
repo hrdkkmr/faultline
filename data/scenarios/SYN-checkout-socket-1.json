@@ -1,0 +1,45 @@
+{
+  "incident_id": "SYN-checkout-socket-1",
+  "detected_at": 1788950400,
+  "title": "[synthetic] Checkout errors and latency",
+  "description": "Controlled scenario: connection exhaustion in checkout.",
+  "observations": [
+    {
+      "kind": "metric",
+      "service": "checkoutservice",
+      "signal": "socket",
+      "score": 240,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "checkoutservice",
+      "signal": "cpu",
+      "score": 45,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "checkoutservice",
+      "signal": "latency-90",
+      "score": 110,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "latency-90",
+      "score": 35,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "error",
+      "score": 14,
+      "direction": "up"
+    }
+  ],
+  "source": "synthetic",
+  "dataset": "synthetic"
+}

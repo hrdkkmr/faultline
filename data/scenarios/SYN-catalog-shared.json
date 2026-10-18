@@ -1,0 +1,59 @@
+{
+  "incident_id": "SYN-catalog-shared",
+  "detected_at": 1788777600,
+  "title": "[synthetic] Storefront, recommendations and checkout slow",
+  "description": "Controlled scenario: a shared dependency saturates.",
+  "observations": [
+    {
+      "kind": "metric",
+      "service": "productcatalogservice",
+      "signal": "cpu",
+      "score": 310,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "productcatalogservice",
+      "signal": "latency-90",
+      "score": 200,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "recommendationservice",
+      "signal": "latency-90",
+      "score": 220,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "latency-90",
+      "score": 140,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "checkoutservice",
+      "signal": "latency-90",
+      "score": 80,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "workload",
+      "score": 3.2,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "recommendationservice",
+      "signal": "cpu",
+      "score": 0.9,
+      "direction": "up"
+    }
+  ],
+  "source": "synthetic",
+  "dataset": "synthetic"
+}

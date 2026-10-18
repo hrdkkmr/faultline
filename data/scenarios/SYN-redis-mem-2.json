@@ -1,0 +1,55 @@
+{
+  "incident_id": "SYN-redis-mem-2",
+  "detected_at": 1788259200,
+  "title": "[synthetic] Cart latency rising again",
+  "description": "Controlled scenario: same failure signature as SYN-redis-mem-1, a few days later.",
+  "observations": [
+    {
+      "kind": "metric",
+      "service": "redis",
+      "signal": "mem",
+      "score": 380,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "redis",
+      "signal": "latency-90",
+      "score": 33,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "cartservice",
+      "signal": "latency-90",
+      "score": 150,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "frontend",
+      "signal": "latency-90",
+      "score": 48,
+      "direction": "up"
+    },
+    {
+      "kind": "metric",
+      "service": "checkoutservice",
+      "signal": "latency-90",
+      "score": 20,
+      "direction": "up"
+    },
+    {
+      "kind": "log",
+      "service": "cartservice",
+      "signal": "log_errors",
+      "score": 9,
+      "direction": "up",
+      "samples": [
+        "Can't access cart storage. StackExchange.Redis.RedisTimeoutException"
+      ]
+    }
+  ],
+  "source": "synthetic",
+  "dataset": "synthetic"
+}

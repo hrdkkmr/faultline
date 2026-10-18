@@ -1,0 +1,80 @@
+{
+  "SYN-redis-mem-1": {
+    "root_cause_service": "redis",
+    "fault": "mem",
+    "expected_affected": [
+      "cartservice",
+      "frontend",
+      "checkoutservice",
+      "frontend-external"
+    ],
+    "purpose": "Seed for memory Test A; restarting the victim cartservice must not resolve it.",
+    "source": "synthetic scenario definition"
+  },
+  "SYN-redis-mem-2": {
+    "root_cause_service": "redis",
+    "fault": "mem",
+    "expected_affected": [
+      "cartservice",
+      "frontend",
+      "checkoutservice",
+      "frontend-external"
+    ],
+    "purpose": "Memory Test A: the earlier successful repair should be retrieved and is applicable.",
+    "source": "synthetic scenario definition"
+  },
+  "SYN-cart-deploy": {
+    "root_cause_service": "cartservice",
+    "fault": "deployment_regression",
+    "expected_affected": [
+      "frontend",
+      "checkoutservice",
+      "frontend-external"
+    ],
+    "purpose": "Memory Test B: similar symptoms to the redis incidents, but redis is healthy; the old redis repair must be rejected.",
+    "source": "synthetic scenario definition"
+  },
+  "SYN-payment-unrelated-deploy": {
+    "root_cause_service": "paymentservice",
+    "fault": "cpu",
+    "expected_affected": [
+      "checkoutservice",
+      "frontend",
+      "frontend-external"
+    ],
+    "purpose": "Rolling back an unrelated deployment (cart) must not resolve it; scaling payment does.",
+    "source": "synthetic scenario definition"
+  },
+  "SYN-catalog-shared": {
+    "root_cause_service": "productcatalogservice",
+    "fault": "cpu",
+    "expected_affected": [
+      "frontend",
+      "recommendationservice",
+      "checkoutservice",
+      "frontend-external"
+    ],
+    "purpose": "Scaling a caller (frontend/recommendation) does not help when the shared dependency is the bottleneck.",
+    "source": "synthetic scenario definition"
+  },
+  "SYN-checkout-socket-1": {
+    "root_cause_service": "checkoutservice",
+    "fault": "socket",
+    "expected_affected": [
+      "frontend",
+      "frontend-external"
+    ],
+    "purpose": "Memory Test C seed: an operator scales checkout out (fails); the failure is remembered.",
+    "source": "synthetic scenario definition"
+  },
+  "SYN-checkout-socket-2": {
+    "root_cause_service": "checkoutservice",
+    "fault": "socket",
+    "expected_affected": [
+      "frontend",
+      "frontend-external"
+    ],
+    "purpose": "Memory Test C: the failed scale_out must not be treated as a working procedure.",
+    "source": "synthetic scenario definition"
+  }
+}
