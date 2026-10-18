@@ -67,6 +67,7 @@ class GraphClient:
                 self._db_obj = FalkorDB(
                     host=self.settings.falkordb_host,
                     port=self.settings.falkordb_port,
+                    username=self.settings.falkordb_user,
                     password=self.settings.falkordb_password,
                     socket_timeout=max(2.0, self.settings.query_timeout_ms / 1000 + 2),
                     socket_connect_timeout=2.0,

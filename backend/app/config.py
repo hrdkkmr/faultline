@@ -18,7 +18,8 @@ class Settings(BaseSettings):
 
     falkordb_host: str = Field(default="localhost", min_length=1)
     falkordb_port: int = Field(default=6379, ge=1, le=65535)
-    falkordb_password: str | None = None
+    falkordb_user: str = Field(default="falkordb", min_length=1)
+    falkordb_password: str | None = Field(default=None, repr=False)
     graph_name: str = Field(default="faultline", alias="FAULTLINE_GRAPH", pattern=r"^[A-Za-z0-9_\-]+$")
 
     max_depth: int = Field(default=6, alias="FAULTLINE_MAX_DEPTH", ge=1, le=10)
